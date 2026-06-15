@@ -53,3 +53,12 @@ WHERE total_cost >
     FROM bookings
 );
 
+-- query-7 
+SELECT
+    match_id,
+    fixture,
+    CAST(base_ticket_price AS INTEGER) AS base_ticket_price
+  FROM matches
+ORDER BY base_ticket_price DESC
+OFFSET 1
+LIMIT 2;
