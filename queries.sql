@@ -41,3 +41,15 @@ FROM users u
 LEFT JOIN bookings b
 ON u.user_id = b.user_id;
 
+-- query-6 
+SELECT
+    booking_id,
+    match_id,
+    CAST(total_cost AS INTEGER) AS total_cost
+FROM bookings
+WHERE total_cost >
+(
+    SELECT AVG(total_cost)
+    FROM bookings
+);
+
