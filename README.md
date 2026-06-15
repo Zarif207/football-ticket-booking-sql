@@ -1,6 +1,6 @@
 # ⚽ Football Ticket Booking System
 
-## 📖 Assignment Overview
+## 📖 Overview
 
 This project is a PostgreSQL-based Football Ticket Booking System designed to manage users, football matches, and ticket bookings.
 
@@ -68,11 +68,6 @@ Stores ticket booking records.
 - One Match can have multiple Bookings.
 - Each Booking belongs to exactly one User and one Match.
 
----
-
-## 📂 Project Files
-
-text QUERY.sql ERD.png README.md 
 
 ---
 
